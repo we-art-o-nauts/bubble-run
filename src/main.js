@@ -68,11 +68,11 @@ function draw() {
 
 		fill(0);
 		textSize(60);
-		text("Join us for #PlayBern  🔥15-18.10.2020😂", margin, margin, width-2*margin, height/2)
+		text("Join us for #PlayBern 🚀 15-18.10.2020", margin, margin, width-2*margin, height/2)
 
 		fill(0);
 		textSize(36);
-		text("You held out for ⌛ " + Math.round(timer) + " seconds", margin, height-margin*5, width-2*margin, height/2)
+		text("⌛ " + Math.round(timer) + " seconds", margin, height-margin*5, width-2*margin, height/2)
 
 		gameFinished = true;
 		return;
