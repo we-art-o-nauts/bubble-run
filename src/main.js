@@ -14,6 +14,19 @@ var quotes = [
 	"Float like a butterfly sting like a bee"
 ];
 
+// Sampled color data (see README)
+var aare = [
+	[102, 132, 153],
+	[173, 192, 186],
+	[113, 174, 182],
+	[136, 135, 131],
+	[108, 144, 127],
+	[ 98, 156, 169],
+	[110, 139, 173],
+	[106, 167, 156]
+];
+var bgcolor = aare[Math.round(Math.random()*(aare.length-1))];
+
 var fairy;
 var bubbles = [];
 var reapers = [];
@@ -98,7 +111,7 @@ function draw() {
   }
 
 	// draw
-	background(0, 190, 220);
+	background(bgcolor); // (0, 190, 220);
   for (var i = 0; i < this.numNPC; i++) {
     bubbles[i].display();
     bubbles[i].bubbleRise(globalSpeed);
