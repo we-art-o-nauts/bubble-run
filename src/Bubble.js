@@ -12,6 +12,10 @@ class Bubble {
 		noStroke();
 		fill(76, 102, 214, this.alpha);
 		ellipse(this.x, this.y, this.size, this.size)
+		// add thumb
+		textSize(this.size*0.8);
+		text('👍', this.x-this.size/2, this.y+this.size/5);
+		fill(0, 102, 153);
 	}
 
 	bubbleRise(speed) {

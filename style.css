@@ -1,0 +1,56 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	/* prevent old safari from bouncing */
+	height: 100%;
+	overflow: hidden;
+}
+
+#gamejam {
+	padding-top: 10px;
+	text-align: center;
+	display: none;
+}
+
+#gamejam img {
+	height: 100px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px;
+	background: darkblue;
+	font-size: 28px;
+  top: -22px;
+  position: relative;
+  margin-left: 60px;
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+/* Demo styles */
+.z-text {
+	animation: wobble ease-in-out infinite;
+	transform: rotateX(10deg) rotateY(-10deg);
+  font-family: 'Monospace';
+  font-size: 60%;
+}
+
+.z-layer {
+   filter: brightness(0.7);
+}
+
+.z-layer:first-child {
+   filter: brightness(1);
+}
+
+@keyframes wobble {
+	0%,
+	100% {
+		transform: rotate3d(-1, 0, 0, 60deg);
+	}
+	50% {
+		transform: rotate3d(1, 0, 0, 60deg);
+	}
+}

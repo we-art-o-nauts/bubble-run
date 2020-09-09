@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Edit index.html to change the title.-->
-    <title>Bubble Run!</title>
+    <title>Bubble Run! - PlayBern edition</title>
 
     <!--p5 libraries folder must be up one level from this html file-->
-    <script type="text/javascript" src="libraries/p5.js"></script>
+    <script type="text/javascript" src="libraries/p5.min.js"></script>
 
     <!--our own script should be in same folder as the html-->
     <script type="text/javascript" src="src/main.js"></script>
@@ -19,26 +19,26 @@
     <script type="text/javascript" src="src/Reaper.js"></script>
     <script type="text/javascript" src="src/Fairy.js"></script>
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            /* prevent old safari from bouncing */
-            height: 100%;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
     <!--Add HTML content if you wish. It will appear above your sketch-->
+    <div id="gamejam">
+        <a href="http://playbern.ch/events/game-jam/" title="Visit PlayBern.ch">
+            <img src="http://playbern.ch/wp-content/uploads/2020/07/logo-head_kleiner-mit-Rand.png" alt="PlayBern"></a>
+        <a title="Restart game" class="reset button">
+            PLAY AGAIN!</a>
+        <a title="Show credits" class="credits button">
+            Credits</a>
+    </div>
 </body>
 
 <script>
     /* prevent safari > 11.3 from bouncing */
     document.body.addEventListener('touchmove', function (e) {
-        e.preventDefault(); 
-    }, {passive: false}); 
+        e.preventDefault();
+    }, {passive: false});
 </script>
 
 </html>
