@@ -1,10 +1,10 @@
 class Reaper {
   // Properties are placed inside of the constructor
   // Constructor runs when an object is first made
-  constructor(x, y) {
+  constructor(x, y, responsiveFactor=1) {
     this.x = x;
     this.y = y; ;
-    this.size = random(30, 50);
+    this.size = random(30, 50) * responsiveFactor;
     this.alpha = random(200, 255)
   }
 
