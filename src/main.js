@@ -11,7 +11,10 @@ var quotes = [
 	"Just before sunrise there is a dark night",
 	"Motivation comes from working on things we care about",
 	"Be who you want you to be, not who they want you to be",
-	"Float like a butterfly sting like a bee"
+	"Float like a butterfly sting like a bee",
+	"Menus in fancy restaurants don't list cents on their prices",
+	"Reality is broken - fix it !",
+	"Focus your energy with relentless optimism"
 ];
 
 // Sampled color data (see README)
